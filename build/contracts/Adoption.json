@@ -86,7 +86,7 @@
   "sourceMap": "25:671:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:671:0;;;;;;;",
   "deployedSourceMap": "25:671:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:671:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;603:89;;;:::i;:::-;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;603:89:0;;;;;;;;;;;;;;;;46:27;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;46:27:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;363:209;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;363:209:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;77:265;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;77:265:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;603:89;647:18;;:::i;:::-;680:8;673:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;603:89;:::o;46:27::-;;;;;;;;;;;;;;;;;;;;;;;:::o;363:209::-;406:4;433:1;424:5;:10;;:25;;;;;447:2;438:5;:11;;424:25;416:34;;;;;;484:1;457:29;;:8;466:5;457:15;;;;;;;;;;;;;;;;;;:29;;;454:115;;;511:10;493:8;502:5;493:15;;;;;;;;;:28;;;;;;;;;;;;;;;;;;533:4;526:11;;;;454:115;559:5;552:12;;363:209;;;;:::o;77:265::-;130:4;160:1;151:5;:10;;:25;;;;;174:2;165:5;:11;;151:25;143:34;;;;;;217:1;190:29;;:8;199:5;190:15;;;;;;;;;;;;;;;;;;:29;;;187:125;;;243:4;236:11;;;;187:125;295:5;288:12;;77:265;;;;:::o;25:671::-;;;;;;;;;;;29:2:-1;21:6;17:15;117:4;105:10;97:6;88:34;148:4;140:6;136:17;126:27;;0:157;25:671:0;;;;:::o",
   "source": "pragma solidity ^0.5.0;\n\ncontract Adoption {\n\taddress[20] public adopters;\n\n\tfunction isExisting(uint petId) public view returns (bool) {\n\t\t\t\t require(petId >= 0 && petId <= 19);\n\t       if(adopters[petId] == address(0)) {\n\t            return true;\n\t        }\n\t        else{\n\t            return false;\n\t        }\n\t        return false;\n\t    }\n\t// Adopting a pet\n\tfunction adopt(uint petId) public returns (bool) {\n\t\trequire(petId >= 0 && petId <= 19);\n\t\tif(adopters[petId] == address(0)) {\n\t\t\tadopters[petId] = msg.sender;\n\t\t\treturn true;\n\t\t}else {\n\t\t\treturn false;\n\t\t}\n\t}\n\n\t// Retrieving the adopters\n\tfunction getAdopters() public view returns (address[20] memory) {\n  \t\treturn adopters;\n\t}\n\n\n}\n",
-  "sourcePath": "/home/oriol/Escritorio/DS-project/final_version/Alastria-Evaluation/contracts/Adoption.sol",
+  "sourcePath": "/home/riccardo-cecco/projects/Alastria-Evaluation/contracts/Adoption.sol",
   "ast": {
     "absolutePath": "project:/contracts/Adoption.sol",
     "exportedSymbols": {
@@ -316,10 +316,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        107,
-                        108
+                        140,
+                        141
                       ],
-                      "referencedDeclaration": 107,
+                      "referencedDeclaration": 140,
                       "src": "143:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -772,10 +772,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        107,
-                        108
+                        140,
+                        141
                       ],
-                      "referencedDeclaration": 107,
+                      "referencedDeclaration": 140,
                       "src": "416:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1013,7 +1013,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 104,
+                              "referencedDeclaration": 137,
                               "src": "511:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1471,10 +1471,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                107,
-                                108
+                                140,
+                                141
                               ],
-                              "referencedDeclaration": 107,
+                              "referencedDeclaration": 140,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1955,10 +1955,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                107,
-                                108
+                                140,
+                                141
                               ],
-                              "referencedDeclaration": 107,
+                              "referencedDeclaration": 140,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -2295,7 +2295,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 104,
+                                          "referencedDeclaration": 137,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -2541,8 +2541,8 @@
     "1337": {
       "events": {},
       "links": {},
-      "address": "0xBfa3c5bb1Acedd645a102A3eF5fa0B207cd547fE",
-      "transactionHash": "0xb5ca9e16c7ecc8118ac21fd6647170ce91663f21ccfda053cd21ce14256d2a5b"
+      "address": "0x1d5827e3115F47bEA19B1672E501Bc77Fa96811C",
+      "transactionHash": "0xbfba8953becf6d889392e9e3f250c38dbe278e36069135a83f039b068b52aabc"
     },
     "5777": {
       "events": {},
@@ -2558,7 +2558,7 @@
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-06-10T16:12:50.735Z",
+  "updatedAt": "2022-06-10T16:20:26.677Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
