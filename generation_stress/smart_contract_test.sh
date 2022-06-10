@@ -81,9 +81,9 @@ while [ "$p" -le $TOTAL_USERS ]; do
   if [[ $p -le $TOTAL_USERS ]]
   then
     wait "${processes_id[$p]}"
-    tag=$( tail -n 1 ./logs/truffle_test_$p.txt )
-    total_time=$(cut -d' ' -f2 <<<"$tag")
-    echo $total_time >> ./logs/truffle_test_total.txt
+    tag=$( grep -n "TimeTransaction" ./logs/truffle_test_$p.txt )
+    total_time=$(cut -d' ' -f2 <<<"${tag[*]}")
+    echo "${total_time[*]}" >> ./logs/truffle_test_total.txt
   fi
   let "p += 1"
 done

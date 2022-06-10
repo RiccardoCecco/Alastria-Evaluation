@@ -1,5 +1,0 @@
-Using network 'development'.
-
-I am 0x1a4aaAE7dc7e03C5453EC4e8b1f78AcceC77685c
-Pet 25 has been adopted
-Execution time of 50 transactions: 15529.692805999948 ms

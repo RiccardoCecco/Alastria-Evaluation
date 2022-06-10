@@ -1,7 +1,0 @@
-Using network 'development'.
-
-I am 0x2086aE37Ed4666Eb7Cd21813aa3f5daFeD0d0bd3
-Pet 0 already adopted
-Pet 23 already adopted
-Pet 37 has been adopted
-Execution time of 50 transactions: 2082.297083000012 ms
