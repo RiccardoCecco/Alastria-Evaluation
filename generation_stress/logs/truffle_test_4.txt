@@ -1,0 +1,5 @@
+Using network 'development'.
+
+I am 0x9d655860dB0f66781f7d4870b3B77c47E75b93f2
+Pet 0 has been adopted
+Execution time of 50 transactions: 15556.213905000011 ms

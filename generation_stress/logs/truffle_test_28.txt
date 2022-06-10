@@ -1,0 +1,5 @@
+Using network 'development'.
+
+I am 0x43651e402FF6EF0bFEEa3673495b9Ca6970AA326
+Pet 32 has been adopted
+Execution time of 50 transactions: 15277.489227999991 ms

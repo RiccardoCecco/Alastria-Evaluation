@@ -1,0 +1,5 @@
+Using network 'development'.
+
+I am 0x624Dc5D86dCB197FC32b24D60b2Bde60af097e94
+Pet 45 has been adopted
+Execution time of 50 transactions: 15163.46584900003 ms
