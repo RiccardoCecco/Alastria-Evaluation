@@ -21,9 +21,12 @@ module.exports = async function(callback) {
 
     //console.log('Exchange fetched', exchange.address)
 
+    var initialTime = performance.now()
+    var endTime
+    var startTime
 
     while (true){
-      var startTime = performance.now()
+      startTime = performance.now()
       const r_n = getRandomInt(total-number)
       const adoption = await Adoption.deployed()
 
@@ -33,18 +36,16 @@ module.exports = async function(callback) {
         //const adopters = await adoption.getAdopters();
         await adoption.adopt(r_n, {from: accounts[a-ad]})
         console.log(`Pet ${r_n} has been adopted`)
-        var endTime = performance.now()
+        endTime = performance.now()
         console.log(`Execution time of a transaction: ${endTime - startTime} ms`)
         break
       }else {
         console.log(`Pet ${r_n} already adopted`)
-        var endTime = performance.now()
+        endTime = performance.now()
         console.log(`Execution time of a transaction: ${endTime - startTime} ms`)
-
       }
-
     }
-
+    console.log(`TotalTime ${endTime - initialTime} ms`)
   }
   catch(error) {
     console.log(error)
