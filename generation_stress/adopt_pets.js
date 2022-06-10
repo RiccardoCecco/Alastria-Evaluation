@@ -33,13 +33,14 @@ module.exports = async function(callback) {
         //const adopters = await adoption.getAdopters();
         await adoption.adopt(r_n, {from: accounts[a-ad]})
         console.log(`Pet ${r_n} has been adopted`)
+        var endTime = performance.now()
+        console.log(`Execution time of a transaction: ${endTime - startTime} ms`)
         break
       }else {
+        var endTime = performance.now()
+        console.log(`Execution time of a transaction: ${endTime - startTime} ms`)
         console.log(`Pet ${r_n} already adopted`)
       }
-      var endTime = performance.now()
-      console.log(`Execution time of a transaction: ${endTime - startTime} ms`)
-
     }
 
   }
