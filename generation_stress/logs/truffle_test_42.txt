@@ -1,0 +1,6 @@
+Using network 'development'.
+
+I am 0x308a812e73F42D74E33577BF2F038D94aAD9Ee49
+Pet 34 has been adopted
+TimeTransaction: 2295.2820449993014 ms
+TotalTime 2295.2917729988694 ms
