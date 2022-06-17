@@ -6,7 +6,7 @@ TOTAL_ADOPTERS=20
 OPTION=$1 #Option to deploy the smart contract; Values: "contract"
 TOTAL_ADOPTERS_ONE="$((TOTAL_ADOPTERS-1))"
 
-echo -e "\n"
+echo -e "$(tput setaf 1)DO NOT CANCEL THE EXECUTION (ZOMBIE PROCESSES)$(tput setaf 7)\n"
 
 echo -e "$(tput setaf 4)$OPTION $(tput setaf 7)option selected"
 
