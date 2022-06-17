@@ -1,0 +1,6 @@
+Using network 'development'.
+
+I am 0x5B9647a65e598Cd9928d3e363b1917df21B9f497
+Pet 5 has been adopted
+TimeTransaction: 2440.1212960015982 ms
+TotalTime 2440.1283780001104 ms

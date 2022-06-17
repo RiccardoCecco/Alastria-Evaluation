@@ -1,0 +1,12 @@
+Using network 'development'.
+
+I am 0xc262bc9d98264A8bfe8f2876E701817efEBd12bE
+Pet 1 already adopted
+TimeTransaction: 733.7721929997206 ms
+Pet 46 already adopted
+TimeTransaction: 637.3868480008096 ms
+Pet 23 already adopted
+TimeTransaction: 697.6380660012364 ms
+Pet 22 has been adopted
+TimeTransaction: 850.8614329993725 ms
+TotalTime 2919.806227998808 ms

@@ -1,0 +1,8 @@
+Using network 'development'.
+
+I am 0x6FD4A93718627329c4947cf7529D344156b74F47
+Pet 38 already adopted
+TimeTransaction: 689.6205140016973 ms
+Pet 20 has been adopted
+TimeTransaction: 1650.8863650001585 ms
+TotalTime 2340.5579279996455 ms

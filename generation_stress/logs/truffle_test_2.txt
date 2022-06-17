@@ -1,0 +1,6 @@
+Using network 'development'.
+
+I am 0x95b32c2b5CFf6bfeA179a8dF54e90Fa5d0A8d499
+Pet 19 has been adopted
+TimeTransaction: 3591.211037000641 ms
+TotalTime 3591.2193919997662 ms

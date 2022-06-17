@@ -4,6 +4,7 @@ Read the Report.pdf file!!!
 
 
 To execute the script `./smart_contract_test.sh contract`!
+You have to enter to generation_stress folder.
 Logs are in the folder Log.
 The script will generate 1 log file for each account and it will track all the transactions and the time spent for each one.
 There will be also another file called `truffle_test_total` where all the time of the transactions will be visible in an unique file.

@@ -1,0 +1,6 @@
+Using network 'development'.
+
+I am 0xF95426C5CD655918df25Ebe510B6bFe5360842b8
+Pet 42 has been adopted
+TimeTransaction: 2363.154423000291 ms
+TotalTime 2363.1636190004647 ms
